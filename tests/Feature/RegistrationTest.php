@@ -23,7 +23,7 @@ class RegistrationTest extends TestCase
             'first_name' => 'Fairooz Afnad',
             'last_name' => 'Fairooz Afnad',
             'slug' => 'fairooz',
-            'email' => 'fafnad23k@gmail.com',
+            'email' => 'admin@example.com',
             'password' => '123',
         ]);
         ob_end_flush();
