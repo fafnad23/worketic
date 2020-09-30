@@ -15,26 +15,6 @@
 
 use App\User;
 
-Route::post('registeruser', function (\Illuminate\Http\Request $request){
-    User::create([
-        'first_name' => $request->first_name,
-        'last_name' => $request->last_name,
-        'slug' => $request->slug,
-        'email' => $request->email,
-        'password' => $request->password,
-    ]);
-    return redirect()->route('home');
-});
-
-Route::get('jsonreturn', function (\Illuminate\Http\Request $request){
-  return response()->json(['name' => 'Faiza', 'email'=>'fafnad23@gmail.com'], 201);
-});
-
-Route::get('catalog-view', function (\Illuminate\Http\Request $request){
-    $foo = 'bar';
-    return view('welcome')->with([$foo]);
-});
-
 Route::fallback(
     function () {
         return View('errors.404 ');
