@@ -50,4 +50,6 @@ class Message extends Model
         $json['receiver'] =  $request['receiver_id'];
         return $json;
     }
+
+
 }
