@@ -13,8 +13,6 @@
  * @link    http://www.amentotech.com
  */
 
-use App\User;
-
 Route::fallback(
     function () {
         return View('errors.404 ');

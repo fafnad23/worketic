@@ -46,10 +46,8 @@ class Message extends Model
         $this->body = filter_var($request['message'], FILTER_SANITIZE_STRING);
         $this->status = intval($request['status']);
         $this->save();
-        $json['author'] =  $request['author_id'];
-        $json['receiver'] =  $request['receiver_id'];
+        $json['author'] = $request['author_id'];
+        $json['receiver'] = $request['receiver_id'];
         return $json;
     }
-
-
 }

@@ -4,7 +4,6 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="wt-bannerimages">
                     <figure class="wt-bannermanimg" data-tilt>
-
                         <img src="{{{ asset(Helper::getHomeBanner('inner_image')) }}}" alt="{{{ trans('lang.img') }}}">
                     </figure>
                 </div>
